@@ -53,7 +53,7 @@ class Reporter(models.Model):
     def __str__(self):
         return "%s %s" % (self.first_name, self.last_name)
 
-# TASK_1 - many-to-many relationship
+# TASK_2 - many-to-many relationship
 # visit "https://docs.djangoproject.com/en/3.1/topics/db/examples/many_to_many/" to learn more
 # In this example, an Article can be published in multiple Publication objects, and a Publication has multiple Article objects:
 
