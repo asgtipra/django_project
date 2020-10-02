@@ -4,4 +4,4 @@ __pycache__
 /firstproject/__pycache__
 
 # exclude migation folder
-/firstproject/firstapp/migrations
+# /firstproject/firstapp/migrations
