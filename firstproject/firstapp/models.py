@@ -38,6 +38,20 @@ class Student(models.Model):
 	def __str__(self):
 		return self.name
 
+
+class Registration(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=40)
+    verify_email = models.EmailField(max_length=40)
+    text = models.CharField(max_length=40)
+
+    class Meta:
+        verbose_name_plural = "Registration"
+
+    def __str__(self):
+        return self.name
+
+
 # TASK_1 - many-to-one relationship
 # A Reporter can have multiple articles but an article can have only one Reporter.
 # If you delete a reporter, his articles will be deleted (assuming that the ForeignKey was defined with django.db.models.ForeignKey.on_delete set to CASCADE, which is the default)
