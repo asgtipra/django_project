@@ -1,5 +1,5 @@
 from django.contrib import admin
-from firstapp.models import Login, Python, Student, Reporter, Publication, Article
+from firstapp.models import Login, Python, Student, Reporter, Publication, Article, Registration
 
 # Register your models here.
 admin.site.register(Login)
@@ -8,3 +8,4 @@ admin.site.register(Student)
 admin.site.register(Reporter)
 admin.site.register(Publication)
 admin.site.register(Article)
+admin.site.register(Registration)
