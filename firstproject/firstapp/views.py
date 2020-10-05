@@ -2,8 +2,12 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from firstapp import forms
 
+
 def home(request):
 	return render(request, 'firstapp/home.html')
+
+#----------------------------------------------------------------------------
+#->	this below code will display data on backend. 
 
 def create(request):
 	if request.method == 'POST':
@@ -36,5 +40,5 @@ def success(request):
 # 		else:
 # 			print('Please put valid values')
 
-# 	form = forms.Registerform
+# 	form = forms.Register
 # 	return render(request, 'firstapp/register.html', {'form':form})
